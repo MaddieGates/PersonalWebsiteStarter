@@ -1,6 +1,7 @@
 import Home from "../Components/Routes/Home";
 import About from "../Components/Routes/About";
 import Calculator from "../Components/Routes/Projects/Calculator";
+import LoginForm from "../Components/Routes/Projects/LoginForm";
 
 export const RouteDefinitions = {
     HOME: {
@@ -14,6 +15,10 @@ export const RouteDefinitions = {
     CALCULATOR: {
         label: "Calculator",
         id: 'CALCULATOR'
+    },
+    LOGIN_FORM: {
+        label: "Login Form",
+        id: 'LOGIN_FORM'
     }
 }
 
@@ -34,5 +39,10 @@ export default [
         path: '/projects/calculator',
         routeId: RouteDefinitions.CALCULATOR.id,
         Component: Calculator
-    },
+
+    }, { title: RouteDefinitions.LOGIN_FORM.label,
+        path: '/projects/loginForm',
+        routeId: RouteDefinitions.LOGIN_FORM.id,
+        Component: LoginForm
+    }
 ];

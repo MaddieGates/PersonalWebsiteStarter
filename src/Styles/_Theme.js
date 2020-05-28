@@ -11,7 +11,7 @@ const lightTheme = {
     },
     "type": "light",
     "primary": {
-        "main": "#1976d2",
+        "main": "#417828",
         "light": "rgb(71, 145, 219)",
         "dark": "rgb(17, 82, 147)",
         "contrastText": "#fff"
@@ -76,7 +76,7 @@ const darkTheme = {
     },
     "type": "dark",
     "primary": {
-        "main": "#90caf9",
+        "main": "#90eaf6",
         "light": "rgb(166, 212, 250)",
         "dark": "rgb(100, 141, 174)",
         "contrastText": "rgba(0, 0, 0, 0.87)"
@@ -144,7 +144,7 @@ export default (type = 'light', fontSize = 14) => {
     const shared = {
         primary: {
             // light: will be calculated from palette.primary.main,
-            main: '#00b5e2',
+            main: 'rgba(34,135,158,0.85)',
             // dark: will be calculated from palette.primary.main,
             contrastText: '#eeeeee',
         },

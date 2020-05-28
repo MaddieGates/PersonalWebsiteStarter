@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { RouteDefinitions } from "../../Constants/Routes";
 import { useTheme } from '@material-ui/core/styles';
+import Photo from '../../photo.jpg'
 
 
 import {
@@ -20,7 +21,7 @@ function Home(props) {
     return (
         <div className={classes.column}>
             <div
-                className={classes.row}
+                className={classes.column}
                 style={{
                     minHeight: 500
                 }}
@@ -29,14 +30,22 @@ function Home(props) {
                     <Typography variant={'h2'}>
                         Maddie Gates
                     </Typography>
-                    <Typography  variant={'subtitle 1'}>
+                    <Typography  variant={'h6'}>
                         Software Development Intern at HouseRater
                     </Typography>
+                    <p>
+
+                    </p>
+
                 </div>
-                <div classname={classes.column}>
-                    <Typography variant={'h4'}>
-                        put picture here
-                    </Typography>
+                <div className={classes.column}>
+                   <img src={Photo}
+                        style={{
+                            width: '60%',
+                            height: '70%'
+
+                        }}
+                    />
                 </div>
             </div>
         </div>

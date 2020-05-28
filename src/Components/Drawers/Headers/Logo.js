@@ -42,7 +42,7 @@ function UserHeader(props) {
                     src={Logo} className="App-logo"
                     alt="logo"
                 />
-                <Typography variant={"subtitle1"}>Name Here?</Typography>
+                <Typography variant={"subtitle1"}>Maddie Gates</Typography>
             </div>
             <Divider />
         </div>
