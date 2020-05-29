@@ -6,8 +6,7 @@ import { useTheme } from '@material-ui/core/styles';
 import useNavigationStyles from '../../../Styles/NavigationStyles'
 
 function LoginForm(props) {
-    const {
-    } = props;
+    const {} = props;
 
     const classes = useNavigationStyles();
     const theme = useTheme();

@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { RouteDefinitions } from "../../Constants/Routes";
 import { useTheme } from '@material-ui/core/styles';
+
 import Photo from '../../photo.jpg'
 
 
@@ -21,7 +22,7 @@ function Home(props) {
     return (
         <div className={classes.column}>
             <div
-                className={classes.column}
+                className={classes.row}
                 style={{
                     minHeight: 500
                 }}
@@ -39,10 +40,10 @@ function Home(props) {
 
                 </div>
                 <div className={classes.column}>
-                   <img src={Photo}
+                   <img src={Photo} border={1}
                         style={{
-                            width: '60%',
-                            height: '70%'
+                            width: '81%',
+                            height: '100%'
 
                         }}
                     />

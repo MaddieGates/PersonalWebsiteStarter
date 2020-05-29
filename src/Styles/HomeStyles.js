@@ -11,14 +11,11 @@ export default makeStyles((theme) => ({
         alignItems: 'center'
     },
     row: {
-        width: '90%',
+        width: '100%',
         flex: 1,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center'
     }
-
-
-
 }))
