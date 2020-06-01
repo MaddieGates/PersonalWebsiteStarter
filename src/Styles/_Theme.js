@@ -144,7 +144,7 @@ export default (type = 'light', fontSize = 14) => {
     const shared = {
         primary: {
             // light: will be calculated from palette.primary.main,
-            main: 'rgba(34,135,158,0.85)',
+            main: 'rgba(28,126,154,0.82)',
             // dark: will be calculated from palette.primary.main,
             contrastText: '#eeeeee',
         },
