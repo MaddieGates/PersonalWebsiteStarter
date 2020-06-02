@@ -2,6 +2,7 @@ import Home from "../Components/Routes/Home";
 import About from "../Components/Routes/About";
 import Calculator from "../Components/Routes/Projects/Calculator";
 import LoginForm from "../Components/Routes/Projects/LoginForm";
+import Comments from "../Components/Routes/Projects/Comments";
 
 export const RouteDefinitions = {
     HOME: {
@@ -19,6 +20,10 @@ export const RouteDefinitions = {
     LOGIN_FORM: {
         label: "Login Form",
         id: 'LOGIN_FORM'
+    },
+    COMMENTS: {
+        label: "Comments",
+        id: 'COMMENTS'
     }
 }
 
@@ -28,8 +33,7 @@ export default [
         path: '/',
         routeId: RouteDefinitions.HOME.id,
         Component: Home
-    },
-    {
+    }, {
         title: RouteDefinitions.ABOUT.label,
         path: '/about',
         routeId: RouteDefinitions.ABOUT.id,
@@ -44,5 +48,10 @@ export default [
         path: '/projects/loginForm',
         routeId: RouteDefinitions.LOGIN_FORM.id,
         Component: LoginForm
+
+    }, { title: RouteDefinitions.COMMENTS.label,
+        path: '/projects/Comments',
+        routeId: RouteDefinitions.COMMENTS.id,
+        Component: Comments
     }
 ];

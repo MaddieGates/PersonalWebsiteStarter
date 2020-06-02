@@ -3,6 +3,7 @@ import Dashboard from "@material-ui/icons/Dashboard"
 import Business from "@material-ui/icons/Business"
 import GraphicEq from "@material-ui/icons/GraphicEq"
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import ChatIcon from '@material-ui/icons/Chat';
 import { RouteDefinitions } from "./Routes";
 
 export default [
@@ -29,5 +30,9 @@ export default [
         title: 'About',
         routeId: RouteDefinitions.ABOUT.id,
         Icon: Business,
-    },
+    }, {
+        title: 'Comments',
+        routeId: RouteDefinitions.COMMENTS.id,
+        Icon: ChatIcon,
+    }
 ];
